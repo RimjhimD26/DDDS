@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tips</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Ubuntu', sans-serif;
+		}
+
+		main{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #3c2846;
+
+		}
+		.container{
+		display: flex;	
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 40px;
+
+		}
+		.card{
+			position: relative;
+			width: 320px;
+			height: 450px;
+			margin: 30px;
+			background: #287bff;
+			border-radius: 20px;
+			border-bottom-left-radius: 160px;
+			border-bottom-right-radius: 160px;
+			box-shadow: 0 15px 0 #fff,
+			inset 0 -15px 0 rgba(255,255,255,0.25),0 45px 0 rgba(0,0,0,0.15);
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		.card::before{
+			content: '';
+			position: absolute;
+			top:-140px;
+			left: -40%;
+			width: 100%;
+			height: 120%;
+			background: linear-gradient(90deg,transparent,rgba(255,255,255,0.2));
+			transform: rotate(35deg);
+			pointer-events: none;
+			filter: blur(5px);
+
+		}
+		.card:nth-child(1){
+			background: linear-gradient(to bottom, #ff2ae0, #645bf6);
+		}
+		.card:nth-child(2){
+			background: linear-gradient(to bottom, #ffec61, #f321d7);
+		}
+		.card:nth-child(3){
+			background: linear-gradient(to bottom, #24ff72, #9a4eff);
+		}
+
+		.icon{
+			position: relative;
+			width: 140px;
+			height: 120px;
+			background: #3c2846;
+			border-bottom-left-radius: 100px;
+			border-bottom-right-radius: 100px;
+
+			box-shadow: 0 10px 0 rgba(0,0,0,0.1),
+			inset 0 -8px 0 #fff
+			z-index:1000;
+			display: flex;
+			justify-content: center;
+		}
+		.icon:before
+		{
+			content:'';
+			position: absolute;
+			top:0;
+			left: -50px;
+			width: 50px;
+			height: 50px;
+			background: transparent;
+			border-top-right-radius: 50px;
+
+			box-shadow: 15px -15px 0 15px #3c2846;
+
+		}
+
+		.icon:after
+		{
+			content:'';
+			position: absolute;
+			top:0;
+			right: -50px;
+			width: 50px;
+			height: 50px;
+			background: transparent;
+			border-top-left-radius: 50px;
+
+			box-shadow: -15px -15px 0 15px #3c2846;
+
+		}
+
+
+		.icon ion-icon{
+			color: #fff;
+			position: relative;
+			font-size: 6em;
+			z-index: 10000;
+			--ionicon-stroke-width: 24px;
+
+		}
+		.content{
+			position: absolute;
+			width: 100%;
+			padding: 30;
+			padding-top: 140px;
+			text-align: center;
+
+		}
+		.content h2{
+			font-size: 1.75em;
+			color: #fff;
+			margin-bottom: 10px;
+		}
+
+		.content p{
+			color: #fff;
+			line-height: 1.5em;
+		}
+        .top{
+        	background: #3c2846;
+        	justify-content: center;
+			text-align: center;
+			color: white;
+			padding: 30;
+			font-size: 2em;
+        }
+		
+	</style>
+</head>
+<body>
+	<header class="top"><pre><h1>
+
+KNOW YOUR PASSENGER RIGHTS</h1></pre></header>
+<main>
+ <div class="container">
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to complain</h2>
+ 			<p>You have the right to complain to the cab service provider if you are not satisfied with the service provided by the driver. The service provider should take appropriate action to address your complaint.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to be charged based on the meter</h2>
+ 			<p>The fare charged by the cab driver must be based on the meter reading, and not on any arbitrary amount decided by the driver.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to refuse ride</h2>
+ 			<p>You have the right to refuse a ride if you are not comfortable with the cab or the driver.</p>
+ 		</div>
+ 	
+ </div>
+
+  <div class="container">
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to choose the route</h2>
+ 			<p>You have the right to choose the route you want the driver to take to reach your destination. The driver should follow the route of your choice, unless there are traffic restrictions or road closures.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to be informed about fare and route</h2>
+ 			<p> The driver must inform you about the fare and the route before the journey begins.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to access emergency services</h2>
+ 			<p>In case of an emergency, the driver should provide you with access to emergency services such as hospitals, police stations, and fire stations.</p>
+ 		</div>
+ 	
+ </div>
+
+<div class="container">
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to privacy and safety</h2>
+ 			<p>The driver must not indulge in any behavior that threatens your safety or privacy.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to file a complaint</h2>
+ 			<p>If you have any complaints or grievances, you have the right to file a complaint with the cab service provider or the police.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+
+ 		</div>
+ 		<div class="content">
+ 			<h2>Right to a non-discriminatory service</h2>
+ 			<p>The driver must not discriminate against passengers based on their gender, race, religion, or any other personal characteristic.</p>
+ 		</div>
+ 	
+ </div>
+
+
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</main>
+</body>
+</html>

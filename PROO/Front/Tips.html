@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tips</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Ubuntu', sans-serif;
+		}
+
+		main{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #3c2846;
+
+		}
+		.container{
+		display: flex;	
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 40px;
+
+		}
+		.card{
+			position: relative;
+			width: 320px;
+			height: 450px;
+			margin: 30px;
+			background: #287bff;
+			border-radius: 20px;
+			border-bottom-left-radius: 160px;
+			border-bottom-right-radius: 160px;
+			box-shadow: 0 15px 0 #fff,
+			inset 0 -15px 0 rgba(255,255,255,0.25),0 45px 0 rgba(0,0,0,0.15);
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		.card::before{
+			content: '';
+			position: absolute;
+			top:-140px;
+			left: -40%;
+			width: 100%;
+			height: 120%;
+			background: linear-gradient(90deg,transparent,rgba(255,255,255,0.2));
+			transform: rotate(35deg);
+			pointer-events: none;
+			filter: blur(5px);
+
+		}
+		.card:nth-child(1){
+			background: linear-gradient(to bottom, #ff2ae0, #645bf6);
+		}
+		.card:nth-child(2){
+			background: linear-gradient(to bottom, #ffec61, #f321d7);
+		}
+		.card:nth-child(3){
+			background: linear-gradient(to bottom, #24ff72, #9a4eff);
+		}
+
+		.icon{
+			position: relative;
+			width: 140px;
+			height: 120px;
+			background: #3c2846;
+			border-bottom-left-radius: 100px;
+			border-bottom-right-radius: 100px;
+
+			box-shadow: 0 10px 0 rgba(0,0,0,0.1),
+			inset 0 -8px 0 #fff
+			z-index:1000;
+			display: flex;
+			justify-content: center;
+		}
+		.icon:before
+		{
+			content:'';
+			position: absolute;
+			top:0;
+			left: -50px;
+			width: 50px;
+			height: 50px;
+			background: transparent;
+			border-top-right-radius: 50px;
+
+			box-shadow: 15px -15px 0 15px #3c2846;
+
+		}
+
+		.icon:after
+		{
+			content:'';
+			position: absolute;
+			top:0;
+			right: -50px;
+			width: 50px;
+			height: 50px;
+			background: transparent;
+			border-top-left-radius: 50px;
+
+			box-shadow: -15px -15px 0 15px #3c2846;
+
+		}
+
+
+		.icon ion-icon{
+			color: #fff;
+			position: relative;
+			font-size: 6em;
+			z-index: 10000;
+			--ionicon-stroke-width: 24px;
+
+		}
+		.content{
+			position: absolute;
+			width: 100%;
+			padding: 30;
+			padding-top: 140px;
+			text-align: center;
+
+		}
+		.content h2{
+			font-size: 1.75em;
+			color: #fff;
+			margin-bottom: 10px;
+		}
+
+		.content p{
+			color: #fff;
+			line-height: 1.5em;
+		}
+        .top{
+        	background: #3c2846;
+        	justify-content: center;
+			text-align: center;
+			color: white;
+			padding: 30;
+			font-size: 2em;
+        }
+		
+	</style>
+</head>
+<body>
+	<header class="top"><pre><h1>
+
+TIPS FOR SAFE DRIVING IN INDIA</h1></pre></header>
+<main>
+ <div class="container">
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Wear the necessary safety gear</h2>
+ 			<p>There are standard safety gears you must wear as road safety precautions. A four-wheeler driver must wear a seat belt while driving. Similarly, a two-wheeler rider has to wear a helmet for protection against accidental injuries.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Avoid multitasking and pay attention</h2>
+ 			<p>Multitasking is a dangerous habit while driving or walking on roads. You already have a lot of things to focus on like traffic signals, other drivers, road users, etc. So, you can’t afford to distract yourself with other tasks like listening to music or talking on the phone. </p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+
+ 		</div>
+ 		<div class="content">
+ 			<h2>Let emergency vehicles pass-through</h2>
+ 			<p>Emergency vehicles such as ambulances, fire brigades must reach their destination as quickly as possible. So, you must give way to such vehicles to cross.</p>
+ 		</div>
+ 	
+ </div>
+
+  <div class="container">
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Cultivate defensive driving habits</h2>
+ 			<p>Defensive driving habits involve techniques that can help you avoid accidents. Being focused is the key factor in this kind of driving. You have to be aware of other vehicles driving around you and be prepared for any unexpected situation.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Don’t drive continuously for a long distance</h2>
+ 			<p>You should avoid covering long distances in one go via your car. Not only does it put pressure on your car’s engine, but it also becomes tiring for you as well. Such conditions increase the chances of some mishaps on the road. </p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+
+ 		</div>
+ 		<div class="content">
+ 			<h2>Don’t drive if you have health issues</h2>
+ 			<p>Driving as an activity requires your complete attention. You can’t afford to drive if you are struggling with some kind of health issue. You should get permission from your doctor to drive before getting behind the wheels. Your doctor would know whether driving is safe in your current condition or not.</p>
+ 		</div>
+ 	
+ </div>
+
+<div class="container">
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Reduce your speed at intersections</h2>
+ 			<p>Do not enter a road intersection at high speed. When your vehicle reaches a corner, a turn or crossing, you must reduce the speed to a minimum. Blow the horn to let other vehicles know your presence. Then, slowly enter an intersection or the main road.</p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+ 		</div>
+ 		<div class="content">
+ 			<h2>Follow lane discipline</h2>
+ 			<p>Keeping the heavy traffic in mind, it becomes extremely crucial to follow lane discipline. You must avoid overtaking another car by changing lanes in busy traffic. Even when you decide to change your lane, do it only after giving a signal. </p>
+ 		</div>
+ 	</div>
+ 	<div class="card">
+ 		<div class="icon">
+ 			<ion-icon name="earth-outline"></ion-icon>
+
+ 		</div>
+ 		<div class="content">
+ 			<h2>Do not drink and drive</h2>
+ 			<p>The rule against drinking and driving is one of the strictest among all road safety rules in India. Different states in the country levy hefty fines and imprisonment for offenders of this traffic safety rule violation.</p>
+ 		</div>
+ 	
+ </div>
+
+
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</main>
+</body>
+</html>
